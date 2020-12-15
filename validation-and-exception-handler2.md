@@ -102,7 +102,7 @@ public ResultVO<String> addUser(@RequestBody User user) {
 
 ```java
 /**
- * @author RC
+ * @author lemon
  * @description 自定义参数校验错误码和错误信息注解
  */
 @Retention(RetentionPolicy.RUNTIME)
@@ -230,7 +230,7 @@ public User getUser() {
 我们接下来再数据统一响应处理类里对这个注解进行判断：
 
 ```java
-@RestControllerAdvice(basePackages = {"com.lemon.demo.controller"})
+@RestControllerAdvice(basePackages = {ecom.lemon.exceptionhandlerr})
 public class ResponseControllerAdvice implements ResponseBodyAdvice<Object> {
     @Override
     public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> aClass) {

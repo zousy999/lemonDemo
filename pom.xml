@@ -24,6 +24,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
         <!--swagger增强工具依赖包，方便生成接口文档。非必须导入-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
