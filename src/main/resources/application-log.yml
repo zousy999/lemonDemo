@@ -1,3 +1,9 @@
 logging:
   level:
-    root: debug
+    root: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - [%thread] %-5level %C %magenta(%M) %green(%L) - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - [%thread] %-5level %C %magenta(%M) %green(%L) - %msg%n"
+  file:
+    path: ../logs
+    name: demo.log
